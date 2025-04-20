@@ -68,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &mkp LCLK      &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &mkp RCLK      &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 INT_HENKAN  &lt 2 SPACE  &mo 3          &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &mkp LCLK              &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp RIGHT_CONTROL      &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 INT_HENKAN  &lt 2 SPACE  &mo 3                  &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -79,10 +79,10 @@
 
         FUNCTION {
             bindings = <
-&bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0                          &kp F1             &kp F2           &kp F3  &kp F4  &kp F5
-&trans          &trans        &trans        &trans        &trans        &trans      &kp F13     &kp F6             &kp F7           &kp F8  &kp F9  &kp F10
-&bt BT_CLR      &trans        &trans        &trans        &trans        &trans      &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &kp F11
-&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans      &trans                                              &kp F12
+&bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0                      &kp F1             &kp F2           &kp F3  &kp F4  &kp F5
+&trans          &trans        &trans        &trans        &trans        &trans      &trans  &kp F6             &kp F7           &kp F8  &kp F9  &kp F10
+&bt BT_CLR      &trans        &trans        &trans        &trans        &trans      &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &kp F11
+&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans  &trans                                              &kp F12
             >;
         };
 
