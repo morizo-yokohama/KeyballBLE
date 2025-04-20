@@ -83,10 +83,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                  &kp EQUAL          &kp CARET         &kp PLUS       &kp ASTERISK      &kp LEFT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp AT_SIGN    &kp EXCLAMATION    &kp LEFT_BRACKET  &kp HASH       &kp DOLLAR        &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp UNDER                    &kp AMPERSAND  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans         &trans                                                                &kp DELETE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RS(CARET)                                              &kp EQUAL        &kp CARET         &kp PLUS    &kp ASTERISK   &kp LEFT_PARENTHESIS
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK   &kp LC(LA(KP_NUMBER_0))      &kp AT_SIGN    &kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH    &kp SEMICOLON  &kp SQT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD     &kp UNDER                    &kp AMPERSAND  &kp LESS_THAN    &kp GREATER_THAN  &kp DOLLAR  &kp PERCENT    &kp SLASH
+&trans                      &trans           &trans           &trans           &trans         &trans                       &trans         &trans                                                        &kp DELETE
             >;
         };
 
