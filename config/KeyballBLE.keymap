@@ -47,6 +47,11 @@
             bindings = <&mkp RCLK>;
             key-positions = <10 11>;
         };
+
+        MClick {
+            bindings = <&mkp MCLK>;
+            key-positions = <11 12>;
+        };
     };
 
     macros {
