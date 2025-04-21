@@ -32,6 +32,21 @@
             bindings = <&kp INTERNATIONAL_5>;
             key-positions = <37 38>;
         };
+
+        brackets {
+            bindings = <&bracketsets>;
+            key-positions = <7 8>;
+        };
+
+        LClick {
+            bindings = <&mkp LCLK>;
+            key-positions = <13 12>;
+        };
+
+        RClick {
+            bindings = <&mkp RCLK>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
@@ -40,6 +55,17 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        bracketsets: bracketsets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_BRACKET>,
+                <&macro_wait_time 100>,
+                <&kp BACKSLASH>;
+
+            label = "BRACKETSETS";
         };
     };
 
