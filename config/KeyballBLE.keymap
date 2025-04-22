@@ -18,12 +18,12 @@
     combos {
         compatible = "zmk,combos";
 
-        Tab-cmb {
+        Tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
 
-        Int5-cmb {
+        Int5 {
             bindings = <&kp INTERNATIONAL_5>;
             key-positions = <37 38>;
         };
@@ -33,22 +33,22 @@
             key-positions = <7 8>;
         };
 
-        L-Int4 {
+        LInt4 {
             bindings = <&kp INTERNATIONAL_4>;
             key-positions = <13 12>;
         };
 
-        L-RClick {
+        LRClick {
             bindings = <&mkp RCLK>;
             key-positions = <10 11>;
         };
 
-        R-RCtrl {
+        RRCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <20 21>;
         };
 
-        R-LClick {
+        RLClick {
             bindings = <&mkp LCLK>;
             key-positions = <30 31>;
         };
