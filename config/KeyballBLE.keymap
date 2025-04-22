@@ -52,16 +52,6 @@
             bindings = <&mkp LCLK>;
             key-positions = <30 31>;
         };
-
-        R-RClick {
-            bindings = <&mkp RCLK>;
-            key-positions = <31 32>;
-        };
-
-        R-MClick {
-            bindings = <&mkp MCLK>;
-            key-positions = <30 32>;
-        };
     };
 
     macros {
