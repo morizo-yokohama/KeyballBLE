@@ -18,12 +18,12 @@
     combos {
         compatible = "zmk,combos";
 
-        Tab {
+        Tab-cmb {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
 
-        Int5 {
+        Int5-cmb {
             bindings = <&kp INTERNATIONAL_5>;
             key-positions = <37 38>;
         };
@@ -60,7 +60,7 @@
 
         R-MClick-cmb {
             bindings = <&mkp MCLK>;
-            key-positions = <30 31 32>;
+            key-positions = <30 32>;
         };
     };
 
