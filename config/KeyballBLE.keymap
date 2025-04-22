@@ -67,6 +67,11 @@
             bindings = <&mkp MCLK>;
             key-positions = <11 12 13>;
         };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <0 10>;
+        };
     };
 
     macros {
@@ -117,7 +122,7 @@
 &kp Q             &kp W         &kp E         &kp R                             &kp T                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                             &kp G        &mkp LCLK              &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                             &kp B        &kp RIGHT_CONTROL      &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL INTERNATIONAL_5  &lt 2 SPACE  &mo 3                  &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
+&kp LEFT_SHIFT    &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL INTERNATIONAL_5  &lt 2 SPACE  &mo 3                  &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
