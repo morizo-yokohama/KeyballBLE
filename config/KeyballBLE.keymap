@@ -19,7 +19,7 @@
         compatible = "zmk,combos";
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp RIGHT_CONTROL>;
             key-positions = <20 21>;
         };
 
@@ -48,9 +48,19 @@
             key-positions = <10 11>;
         };
 
-        MClick {
-            bindings = <&mkp MCLK>;
-            key-positions = <11 12>;
+        RCtrl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <20 21>;
+        };
+
+        LClick {
+            bindings = <&mkp LCLK>;
+            key-positions = <30 31>;
+        };
+
+        RClick {
+            bindings = <&mkp RCLK>;
+            key-positions = <31 32>;
         };
     };
 
