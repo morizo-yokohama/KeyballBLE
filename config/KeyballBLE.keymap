@@ -33,32 +33,32 @@
             key-positions = <7 8>;
         };
 
-        L-Int4-cmb {
+        L-Int4 {
             bindings = <&kp INTERNATIONAL_4>;
             key-positions = <13 12>;
         };
 
-        L-RClick-cmb {
+        L-RClick {
             bindings = <&mkp RCLK>;
             key-positions = <10 11>;
         };
 
-        R-RCtrl-cmb {
+        R-RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <20 21>;
         };
 
-        R-LClick-cmb {
+        R-LClick {
             bindings = <&mkp LCLK>;
             key-positions = <30 31>;
         };
 
-        R-RClick-cmb {
+        R-RClick {
             bindings = <&mkp RCLK>;
             key-positions = <31 32>;
         };
 
-        R-MClick-cmb {
+        R-MClick {
             bindings = <&mkp MCLK>;
             key-positions = <30 32>;
         };
