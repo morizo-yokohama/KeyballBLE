@@ -72,6 +72,11 @@
             bindings = <&kp TAB>;
             key-positions = <0 10>;
         };
+
+        LEscape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <10 11 12 13>;
+        };
     };
 
     macros {
@@ -130,10 +135,10 @@
 
         FUNCTION {
             bindings = <
-&bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0                      &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans          &trans        &trans        &trans        &trans        &trans      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&bt BT_CLR      &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &kp F11
-&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans  &trans                          &kp F12
+&bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0                                 &kp F1         &kp F2         &kp F3         &kp F4  &kp F5
+&trans          &trans        &trans        &trans        &trans        &trans      &kp C_VOLUME_UP    &kp F6         &kp F7         &kp F8         &kp F9  &kp F10
+&bt BT_CLR      &trans        &trans        &trans        &trans        &trans      &kp C_VOLUME_DOWN  &kp RS(RC(O))  &kp RS(RC(M))  &kp RS(RC(H))  &trans  &kp F11
+&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans             &trans                                               &kp F12
             >;
         };
 
@@ -148,10 +153,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                                               &trans          &trans          &trans        &trans           &trans
-&kp HOME        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &trans             &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LS(LA(TAB))  &trans          &kp LA(TAB)      &kp LC(LS(O))  &kp LS(LC(M))      &kp C_VOLUME_DOWN  &trans          &trans          &trans        &trans           &trans
-&trans          &trans           &trans          &trans           &trans         &trans             &trans             &trans                                                         &trans
+&kp ESCAPE       &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                      &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
+&kp LS(LA(TAB))  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(TAB)  &trans      &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT   &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans       &trans      &kp C_VOLUME_DOWN  &kp RS(RC(O))   &kp RS(RC(M))   &kp RS(RC(H))  &trans           &trans
+&trans           &trans           &trans          &trans           &trans       &trans      &trans             &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
