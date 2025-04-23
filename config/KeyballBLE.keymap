@@ -147,11 +147,13 @@
 
         FUNCTION {
             bindings = <
-&bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0                              &kp EQUAL        &kp CARET         &kp PLUS    &kp ASTERISK   &kp LEFT_PARENTHESIS
-&trans          &kp F1         &kp F2         &kp F3        &kp F4        &kp F5       &kp AT_SIGN    &kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH    &kp SEMICOLON  &kp SQT
-&bt BT_CLR      &kp F6         &kp F7         &kp F8        &kp F9        &kp F10      &kp AMPERSAND  &kp LESS_THAN    &kp GREATER_THAN  &kp DOLLAR  &kp PERCENT    &kp QUESTION
-&bt BT_CLR_ALL  &kp LS(LC(O))  &kp LS(LC(M))  &trans        &trans        &trans       &trans         &trans                                                        &trans
+&bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0                                  &kp EQUAL        &kp CARET         &kp PLUS    &kp ASTERISK   &kp LEFT_PARENTHESIS
+&trans          &kp F7         &kp F8         &kp F9        &kp C_VOLUME_UP    &trans      &kp AT_SIGN    &kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH    &kp SEMICOLON  &kp SQT
+&bt BT_CLR      &trans         &trans         &trans        &kp C_VOLUME_DOWN  &trans      &kp AMPERSAND  &kp LESS_THAN    &kp GREATER_THAN  &kp DOLLAR  &kp PERCENT    &kp QUESTION
+&bt BT_CLR_ALL  &kp LS(LC(O))  &kp LS(LC(M))  &trans        &trans             &trans      &trans         &trans                                                        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         NUM {
@@ -165,13 +167,13 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                     &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
-&trans          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans  &trans      &kp RC(MINUS)          &trans          &trans          &trans         &trans           &trans
-&trans          &trans           &trans          &trans           &trans  &trans      &trans                 &trans                                                          &trans
+&kp ESCAPE      &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                           &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
+&msc SCRL_DOWN  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &msc SCRL_UP  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans        &trans      &kp RC(MINUS)          &trans          &msc SCRL_DOWN  &msc SCRL_UP   &trans           &trans
+&trans          &trans           &trans          &trans           &trans        &trans      &trans                 &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LA(LS(TAB)) LA(LS(TAB))>;
         };
 
         MOUSE {
