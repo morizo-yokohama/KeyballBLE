@@ -91,7 +91,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp RIGHT_BRACKET>,
+                <&kt RIGHT_BRACKET>,
                 <&macro_wait_time 100>,
                 <&kp BACKSLASH>;
 
@@ -101,9 +101,15 @@
         WimSwitch: WimSwitch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT>, <&macro_wait_time 100>, <&kp TAB>;
-
+            bindings = <&kt LEFT_ALT &kp TAB>;
             label = "WIMSWITCH";
+        };
+
+        WinSwitchRev: WinSwitchRev {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LS(LEFT_ALT) &kp TAB>;
+            label = "WINSWITCHREV";
         };
     };
 
@@ -161,10 +167,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE       &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                         &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
-&kp LS(LA(TAB))  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &WimSwitch  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT   &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans      &trans      &kp RC(MINUS)          &trans          &trans          &trans         &trans           &trans
-&trans           &trans           &trans          &trans           &trans      &trans      &trans                 &trans                                                          &trans
+&kp ESCAPE      &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                         &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
+&WinSwitchRev   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &WimSwitch  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans      &trans      &kp RC(MINUS)          &trans          &trans          &trans         &trans           &trans
+&trans          &trans           &trans          &trans           &trans      &trans      &trans                 &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
