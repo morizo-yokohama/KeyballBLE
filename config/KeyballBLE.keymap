@@ -97,6 +97,14 @@
 
             label = "BRACKETSETS";
         };
+
+        WimSwitch: WimSwitch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT>, <&macro_wait_time 100>, <&kp TAB>;
+
+            label = "WIMSWITCH";
+        };
     };
 
     behaviors {
@@ -153,10 +161,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE       &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                      &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
-&kp LS(LA(TAB))  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(TAB)  &trans      &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT   &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans       &trans      &kp C_VOLUME_DOWN  &kp RS(RC(O))   &kp RS(RC(M))   &kp RS(RC(H))  &trans           &trans
-&trans           &trans           &trans          &trans           &trans       &trans      &trans             &trans                                                          &trans
+&kp ESCAPE       &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                         &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
+&kp LS(LA(TAB))  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &WimSwitch  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT   &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans      &trans      &kp RC(MINUS)          &trans          &trans          &trans         &trans           &trans
+&trans           &trans           &trans          &trans           &trans      &trans      &trans                 &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
