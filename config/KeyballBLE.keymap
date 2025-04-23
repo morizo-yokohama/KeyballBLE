@@ -18,8 +18,8 @@
     combos {
         compatible = "zmk,combos";
 
-        Tab {
-            bindings = <&kp TAB>;
+        ShiftTab {
+            bindings = <&kp LS(TAB)>;
             key-positions = <0 1>;
         };
 
@@ -70,7 +70,7 @@
 
         tab2 {
             bindings = <&kp TAB>;
-            key-positions = <0 10>;
+            key-positions = <2 1>;
         };
 
         LEscape {
@@ -146,10 +146,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                             &kp T                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                             &kp G        &kp LG(LS(S))      &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                             &kp B        &none              &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LC(V) LC(C)   &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL INTERNATIONAL_5  &lt 2 SPACE  &mo 3              &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E             &kp R                         &kp T                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                         &kp G        &kp LG(LS(S))      &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                         &kp B        &none              &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LG(D)         &kp LEFT_WIN  &kp LEFT_CONTROL  &mt LEFT_ALT INTERNATIONAL_5  &lt 2 SPACE  &mo 3              &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -179,13 +179,13 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                                    &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
-&msc SCRL_DOWN  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &msc SCRL_UP  &trans               &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans        &kp LA(LS(TAB))      &kp RC(MINUS)          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT  &trans
-&trans          &trans           &trans          &trans           &trans        &trans               &trans                 &trans                                                          &trans
+&kp ESCAPE      &kp LC(W)        &kp UP_ARROW    &kp LC(T)        &trans                                           &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
+&msc SCRL_DOWN  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &msc SCRL_UP  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans        &trans      &kp RC(MINUS)          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT  &trans
+&trans          &trans           &trans          &trans           &trans        &trans      &trans                 &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&inc_dec_kp LC(LS(SEMI)) LC(MINUS)>;
         };
 
         MOUSE {
