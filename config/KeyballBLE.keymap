@@ -64,7 +64,7 @@
         };
 
         LMClick {
-            bindings = <&mkp MCLK>;
+            bindings = <&mkp MB3>;
             key-positions = <11 12 13>;
         };
 
@@ -185,7 +185,7 @@
 &trans          &trans           &trans          &trans       &trans           &trans      &trans                 &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(LS(SEMICOLON))>;
+            sensor-bindings = <&inc_dec_kp RC(MINUS) RC(RS(SEMICOLON))>;
         };
 
         SCROLL {
