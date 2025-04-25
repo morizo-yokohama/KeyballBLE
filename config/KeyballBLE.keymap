@@ -25,7 +25,7 @@
 
         Int5 {
             bindings = <&kp INTERNATIONAL_4>;
-            key-positions = <37 38>;
+            key-positions = <37 13>;
         };
 
         brackets {
@@ -80,17 +80,12 @@
 
         kickWinSwitch {
             bindings = <&WinSwitch>;
-            key-positions = <22 39>;
+            key-positions = <10 38>;
         };
 
         kickArrow {
             bindings = <&mo 3>;
             key-positions = <11 13>;
-        };
-
-        KickRCtrl {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <41 18>;
         };
     };
 
@@ -168,10 +163,10 @@
 
         NUM {
             bindings = <
-&kp MINUS          &kp N7  &kp N8  &kp N9  &kp RS(SEMICOLON)                                              &kp LS(SEMICOLON)  &kp N7        &kp N8        &kp N9        &kp LS(SQT)
-&kp SLASH          &kp N4  &kp N5  &kp N6  &kp LS(SQT)        &kp LC(LA(KP_NUMBER_0))      &kp AT_SIGN    &kp PERIOD         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD         &kp UNDER                    &kp AMPERSAND  &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&trans             &trans  &trans  &trans  &trans             &trans                       &trans         &trans                                                       &kp DELETE
+&kp MINUS          &kp N7  &kp N8  &kp N9  &kp RS(SEMICOLON)                                       &kp LS(SEMICOLON)  &kp N7        &kp N8        &kp N9        &kp LS(SQT)
+&kp SLASH          &kp N4  &kp N5  &kp N6  &kp LS(SQT)        &kp LC(LA(KP_NUMBER_0))      &none   &kp PERIOD         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD         &kp UNDER                    &none   &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&trans             &trans  &trans  &trans  &trans             &trans                       &trans  &trans                                                       &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
