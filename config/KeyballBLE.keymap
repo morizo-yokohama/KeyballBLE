@@ -25,7 +25,7 @@
 
         Int5 {
             bindings = <&kp INTERNATIONAL_4>;
-            key-positions = <37 13>;
+            key-positions = <37 38>;
         };
 
         brackets {
@@ -113,6 +113,13 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp TAB>;
             label = "WINSWITCH";
+        };
+
+        NumLayer: NumLayer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &mo 2>;
+            label = "NUMLAYER";
         };
     };
 
