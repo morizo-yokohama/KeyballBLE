@@ -123,9 +123,7 @@
                 <&kp INTERNATIONAL_5 &mo 2>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp INTERNATIONAL_5 &mo 2>,
-                <&macro_tap>,
-                <&kp INTERNATIONAL_4>;
+                <&kp INTERNATIONAL_5 &mo 2>;
 
             label = "NUMLAYER";
         };
