@@ -118,7 +118,12 @@
         NumLayer: NumLayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_5>, <&macro_wait_time 10>, <&mo 2>;
+            bindings =
+                <&kp INTERNATIONAL_5>,
+                <&macro_press>,
+                <&mo 2>,
+                <&macro_release>,
+                <&mo 2>;
 
             label = "NUMLAYER";
         };
