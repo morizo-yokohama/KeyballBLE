@@ -23,11 +23,6 @@
             key-positions = <0 1>;
         };
 
-        Int5 {
-            bindings = <&kp INTERNATIONAL_4>;
-            key-positions = <37 38>;
-        };
-
         brackets {
             bindings = <&bracketsets>;
             key-positions = <7 8>;
