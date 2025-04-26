@@ -87,6 +87,11 @@
             bindings = <&mo 3>;
             key-positions = <11 13>;
         };
+
+        stickySingle {
+            bindings = <&kp INTERNATIONAL_5>;
+            key-positions = <34 37>;
+        };
     };
 
     macros {
