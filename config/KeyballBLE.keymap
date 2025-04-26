@@ -121,9 +121,8 @@
             bindings =
                 <&macro_tap>,
                 <&kp INTERNATIONAL_5>,
-                <&macro_press>,
-                <&mo 2>,
-                <&macro_release>;
+                <&macro_release>,
+                <&mo 2>;
 
             label = "NUMLAYER";
         };
