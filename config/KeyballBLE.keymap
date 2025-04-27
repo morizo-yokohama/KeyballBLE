@@ -74,7 +74,7 @@
         };
 
         kickWinSwitch {
-            bindings = <&WinSwitch>;
+            bindings = <&kp LEFT_CONTROL>;
             key-positions = <10 38>;
         };
 
@@ -94,7 +94,7 @@
         };
 
         kickWinSwitch2 {
-            bindings = <&WinSwitch>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <10 37>;
         };
     };
@@ -116,19 +116,6 @@
                 <&kp BACKSLASH>;
 
             label = "BRACKETSETS";
-        };
-
-        WinSwitch: WinSwitch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kt LEFT_ALT>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "WINSWITCH";
         };
 
         NumLayer: NumLayer {
@@ -190,14 +177,22 @@
         AltCtrlRight: AltCtrlRight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(RIGHT_ARROW) &kp RC(RIGHT_ARROW)>;
+            bindings =
+                <&kp RA(RIGHT_ARROW) &kp LC(RIGHT_ARROW)>,
+                <&macro_wait_time 20>,
+                <&macro_press>;
+
             label = "ALTCTRLRIGHT";
         };
 
         AltCtrlLeft: AltCtrlLeft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(LEFT_ARROW) &kp RC(LEFT_ARROW)>;
+            bindings =
+                <&kp RA(LEFT_ARROW)>,
+                <&macro_wait_time 20>,
+                <&kp LC(LEFT_ARROW)>;
+
             label = "ALTCTRLLEFT";
         };
     };
