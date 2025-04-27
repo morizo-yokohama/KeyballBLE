@@ -23,11 +23,6 @@
             key-positions = <0 1>;
         };
 
-        brackets {
-            bindings = <&bracketsets>;
-            key-positions = <7 8>;
-        };
-
         LLClick {
             bindings = <&mkp LCLK>;
             key-positions = <13 12>;
@@ -83,11 +78,6 @@
             key-positions = <11 13>;
         };
 
-        stickySingle {
-            bindings = <&kp INTERNATIONAL_5>;
-            key-positions = <34 37>;
-        };
-
         LLCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <10 11>;
@@ -105,17 +95,6 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
-        };
-
-        bracketsets: bracketsets {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kt RIGHT_BRACKET>,
-                <&macro_wait_time 100>,
-                <&kp BACKSLASH>;
-
-            label = "BRACKETSETS";
         };
 
         NumLayer: NumLayer {
@@ -178,9 +157,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp RA(RIGHT_ARROW) &kp LC(RIGHT_ARROW)>,
+                <&kp RA(RIGHT_ARROW)>,
                 <&macro_wait_time 20>,
-                <&macro_press>;
+                <&kp LC(RIGHT_ARROW)>;
 
             label = "ALTCTRLRIGHT";
         };
@@ -225,22 +204,13 @@
             tapping-term-ms = <200>;
         };
 
-        tempSingleMode: tempSingleMode {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TEMPSINGLEMODE";
-            bindings = <&tempInt5>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         IMEkey: IMEkey {
             compatible = "zmk,behavior-tap-dance";
             label = "IMEKEY";
             #binding-cells = <0>;
             bindings = <&kp INTERNATIONAL_5>, <&kp INTERNATIONAL_4>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
         };
     };
 
