@@ -92,6 +92,11 @@
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <10 11>;
         };
+
+        kickWinSwitch2 {
+            bindings = <&WinSwitch>;
+            key-positions = <10 37>;
+        };
     };
 
     macros {
