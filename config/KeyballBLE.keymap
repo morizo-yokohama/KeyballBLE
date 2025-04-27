@@ -158,6 +158,34 @@
 
             label = "TEMPINT5";
         };
+
+        LCtrlTab: LCtrlTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kt LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "LCTRLTAB";
+        };
+
+        LCtrlShiftTab: LCtrlShiftTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kt LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
+            label = "LCTRLSHIFTTAB";
+        };
     };
 
     behaviors {
@@ -246,7 +274,7 @@
         ARROW {
             bindings = <
 &kp ESCAPE      &trans              &trans         &trans               &trans                                     &trans          &trans          &kp PAGE_DOWN  &kp PAGE_UP      &trans
-&trans          &kp LC(LS(TAB))     &kp LC(L)      &kp LC(TAB)          &trans  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
+&trans          &LCtrlShiftTab      &kp LC(L)      &LCtrlTab            &trans  &trans      &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
 &kp LEFT_SHIFT  &kp LA(LEFT_ARROW)  &kp LS(LC(R))  &kp LA(RIGHT_ARROW)  &trans  &trans      &kp RC(MINUS)          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT  &trans
 &trans          &trans              &trans         &trans               &trans  &trans      &trans                 &trans                                                          &trans
             >;
