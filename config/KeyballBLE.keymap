@@ -191,6 +191,8 @@
             label = "IMEKEY";
             #binding-cells = <0>;
             bindings = <&kp INTERNATIONAL_5>, <&kp INTERNATIONAL_4>;
+
+            tapping-term-ms = <500>;
         };
     };
 
