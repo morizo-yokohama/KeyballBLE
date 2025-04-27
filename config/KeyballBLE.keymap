@@ -87,6 +87,11 @@
             bindings = <&kp INTERNATIONAL_5>;
             key-positions = <34 37>;
         };
+
+        LLCtrl {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
@@ -180,6 +185,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        IMEkey: IMEkey {
+            compatible = "zmk,behavior-tap-dance";
+            label = "IMEKEY";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5>, <&kp INTERNATIONAL_4>;
+        };
     };
 
     keymap {
@@ -187,10 +199,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R                              &kp T                                                        &kp Y        &kp U  &lt 4 I    &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F                              &kp G                  &kp LG(LS(S))      &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                              &kp B                  &none              &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_ALT      &kp LEFT_WIN  &kp LEFT_CONTROL  &tempSingleMode 0 INTERNATIONAL_4  &gotoNumLayer 0 SPACE  &mo 3              &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E             &kp R    &kp T                                                        &kp Y        &kp U  &lt 4 I    &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F    &kp G                  &kp LG(LS(S))      &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V    &kp B                  &none              &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_ALT      &kp LEFT_WIN  &kp LEFT_CONTROL  &IMEkey  &gotoNumLayer 0 SPACE  &mo 3              &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
