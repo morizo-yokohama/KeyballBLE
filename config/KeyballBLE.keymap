@@ -130,11 +130,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt LEFT_CONTROL>,
+                <&kt RIGHT_CONTROL>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_release>,
-                <&kp LEFT_CONTROL>;
+                <&kp RIGHT_CONTROL>;
 
             label = "LCTRLTAB";
         };
@@ -144,11 +144,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&kt RIGHT_CONTROL &kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_release>,
-                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+                <&kp RIGHT_CONTROL &kp LEFT_SHIFT>;
 
             label = "LCTRLSHIFTTAB";
         };
