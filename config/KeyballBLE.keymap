@@ -116,7 +116,14 @@
         WinSwitch: WinSwitch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp TAB>;
+            bindings =
+                <&macro_press>,
+                <&kt LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
             label = "WINSWITCH";
         };
 
