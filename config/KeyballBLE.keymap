@@ -252,8 +252,8 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp RC(W)       &none          &kp RC(R)      &kp RC(T)                                     &trans          &kp HOME        &none         &kp END          &none
-&none           &LCtrlShiftTab  &kp RC(L)      &LCtrlTab      &none      &none       &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&kp ESCAPE      &kp RC(W)       &none          &kp RC(R)      &kp RC(T)                                     &trans          &kp HOME        &none         &kp END          &kp PAGE_UP
+&none           &LCtrlShiftTab  &kp RC(L)      &LCtrlTab      &none      &none       &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
 &kp LEFT_SHIFT  &AltCtrlLeft    &kp RS(RC(R))  &AltCtrlRight  &none      &none       &kp RC(MINUS)          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
 &trans          &trans          &trans         &trans         &trans     &trans      &trans                 &trans                                                         &trans
             >;
