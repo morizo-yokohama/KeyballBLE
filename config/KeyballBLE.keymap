@@ -219,10 +219,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E         &kp R    &kp T                                                        &kp Y        &kp U  &lt 4 I    &kp O    &kp P
-&kp A               &kp S         &kp D         &kp F    &kp G                  &kp LG(LS(S))      &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V    &kp B                  &kp B              &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LEFT_CONTROL Z  &kp LEFT_WIN  &kp LEFT_ALT  &IMEkey  &gotoNumLayer 0 SPACE  &mo 3              &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
+&kp Q                &kp W         &kp E         &kp R    &kp T                                                        &kp Y        &kp U  &lt 4 I    &kp O    &kp P
+&kp A                &kp S         &kp D         &kp F    &kp G                  &kp LG(LS(S))      &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z     &kp X         &kp C         &kp V    &kp B                  &kp B              &kp BACKSLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt RIGHT_CONTROL Z  &kp LEFT_WIN  &kp LEFT_ALT  &IMEkey  &gotoNumLayer 0 SPACE  &mo 3              &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -241,10 +241,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE         &none      &none      &none      &none                                                    &kp LS(SEMICOLON)  &kp N7        &kp N8        &kp N9        &kp LS(SQT)
-&kp RC(A)          &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp TAB      &kp LC(LA(KP_NUMBER_0))      &kp RS(MINUS)  &kp PERIOD         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp RC(Z)          &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp LS(TAB)  &none                        &none          &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp RIGHT_CONTROL  &trans     &trans     &trans     &trans       &trans                       &trans         &trans                                                       &kp DELETE
+&kp ESCAPE        &none      &none      &none      &none                                                    &kp LS(SEMICOLON)  &kp N7        &kp N8        &kp N9        &kp LS(SQT)
+&kp RC(A)         &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp TAB      &kp LC(LA(KP_NUMBER_0))      &kp RS(MINUS)  &kp PERIOD         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp RC(Z)         &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp LS(TAB)  &none                        &none          &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp LEFT_CONTROL  &trans     &trans     &trans     &trans       &trans                       &trans         &trans                                                       &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
