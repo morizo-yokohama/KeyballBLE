@@ -241,10 +241,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE        &none      &none      &none      &none                                                    &kp LS(SEMICOLON)  &kp N7        &kp N8        &kp N9        &kp LS(SQT)
-&kp RC(A)         &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp TAB      &kp LC(LA(KP_NUMBER_0))      &kp RS(MINUS)  &kp PERIOD         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp RC(Z)         &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp LS(TAB)  &none                        &none          &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp LEFT_CONTROL  &trans     &trans     &trans     &trans       &trans                       &trans         &trans                                                       &kp DELETE
+&kp ESCAPE        &kp RC(W)  &none      &kp RC(R)  &kp RC(T)                                              &kp LS(SEMICOLON)  &kp N7        &kp N8        &kp N9        &kp LS(SQT)
+&kp RC(A)         &none      &none      &kp RC(F)  &kp RC(G)  &kp LC(LA(KP_NUMBER_0))      &kp RS(MINUS)  &kp PERIOD         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp RC(Z)         &kp RC(X)  &kp RC(C)  &kp RC(V)  &none      &none                        &none          &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp LEFT_CONTROL  &trans     &trans     &trans     &trans     &trans                       &trans         &trans                                                       &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -252,10 +252,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp RC(W)       &none          &kp RC(R)      &kp RC(T)                                     &trans          &kp HOME        &none         &kp END          &kp PAGE_UP
-&none           &LCtrlShiftTab  &kp RC(L)      &LCtrlTab      &none      &none       &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp LEFT_SHIFT  &AltCtrlLeft    &kp RS(RC(R))  &AltCtrlRight  &none      &none       &kp RC(MINUS)          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-&trans          &trans          &trans         &trans         &trans     &trans      &trans                 &trans                                                         &trans
+&kp ESCAPE      &none           &none          &none          &none                                      &trans          &kp HOME        &none         &kp END          &kp PAGE_UP
+&none           &LCtrlShiftTab  &kp RC(L)      &LCtrlTab      &none   &none       &kp RC(RS(SEMICOLON))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&kp LEFT_SHIFT  &AltCtrlLeft    &kp RS(RC(R))  &AltCtrlRight  &none   &none       &kp RC(MINUS)          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+&trans          &trans          &trans         &trans         &trans  &trans      &trans                 &trans                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RC(MINUS) RC(RS(SEMICOLON))>;
