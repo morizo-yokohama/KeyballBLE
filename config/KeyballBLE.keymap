@@ -245,7 +245,7 @@
             bindings = <
 &kp ESCAPE        &kp RC(W)  &none      &kp RC(R)  &kp RC(T)                                              &kp LS(SEMICOLON)  &kp N7        &kp N8        &kp N9        &kp LS(SQT)
 &kp RC(A)         &none      &none      &kp RC(F)  &kp LC(G)  &kp LC(LA(KP_NUMBER_0))      &kp RS(MINUS)  &kp PERIOD         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp RC(Z)         &kp RC(X)  &kp RC(C)  &kp RC(V)  &none      &none                        &kp SQT        &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp RC(Z)         &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp LC(U)  &none                        &kp SQT        &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
 &kp LEFT_CONTROL  &trans     &trans     &trans     &trans     &trans                       &trans         &trans                                                       &kp DELETE
             >;
 
